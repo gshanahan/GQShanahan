@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Gabriel Q. Shanahan - Developer Portfolio</title>
   <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="profile-header">
     <img src="https://media.licdn.com/dms/image/v2/D4E03AQFfnwIwBm6oXA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1730212117529?e=1752105600&v=beta&t=ITRLkP8u6EV78lRIawYr3LaKYWMVkliHaq-FUEuo8aA" alt="Gabriel Q. Shanahan" class="profile-pic" />
     <div class="header-text">
-      <h1>Gabriel Q. Shanahan</h1>
+      <h1 class="name-header">Gabriel Q. Shanahan</h1>
       <p>Software Engineer • Builder • Problem Solver</p>
     </div>
   </header>
@@ -19,21 +20,60 @@
   <main>
     <section id="about">
       <h2>About Me</h2>
-      <p>I’m a developer with a background in software testing, focused on building clean, efficient code and solving real-world problems.</p>
+      <div class="about-grid">
+        <div class="about-summary">
+          <p>I'm a Software Quality Engineer with 3 years of experience in enterprise-scale testing and automation, now transitioning into software development. I bring a creative mindset, strong technical foundation, and a passion for building tools that make an impact—like my current project, <strong>PocketProverbs</strong>, a GPT-powered Bible study assistant.</p>
+        </div>
+    
+        <div class="about-cards">
+          <div class="card">
+            <h3>Experience</h3>
+            <ul>
+              <li>3 years in software QA and test automation (Cypress, JavaScript)</li>
+              <li>Agile/SAFe, Azure DevOps, Rally, SQL Server</li>
+              <li>Experienced with functional, integration, regression & exploratory testing</li>
+            </ul>
+          </div>
+    
+          <div class="card">
+            <h3>Education</h3>
+            <p>B.S. in Computer Science – <br>Tennessee Technological University, 2022</p>
+            <p><em>Focus: Information Assurance</em></p>
+          </div>
+    
+          <div class="card">
+            <h3>Career Goals</h3>
+            <p>I’m actively pursuing opportunities to grow into a full-time software engineering role. I'm focused on building innovative apps, refining my dev skills, and continuously learning to become a strong contributor to mission-driven tech teams.</p>
+          </div>
+        </div>
+      </div>
     </section>
+    
 
     <section id="projects">
       <h2>Projects</h2>
-      <ul>
-        <li>
-          <strong>Project Name</strong><br>
-          Short description and <a href="https://github.com/yourusername/project">GitHub</a>
-        </li>
-        <li>
-          <strong>Another Project</strong><br>
-          What it does, why it's cool, and <a href="#">live demo</a>
-        </li>
-      </ul>
+      <section class="project">
+        <div class="project-text">
+          <h3>PocketProverbs</h3>
+          <p>
+            <strong>PocketProverbs</strong> is a GPT-powered Bible study assistant built to enhance 
+            Scripture exploration with AI-driven insights. Using the <strong>OpenAI GPT API</strong>, 
+            the app delivers historical context, verse analysis, and cross-references. 
+            The frontend is developed with <strong>HTML</strong> and <strong>JavaScript</strong>, while <strong>Google Firebase</strong> 
+            manages user authentication and stores study data. Hosted on <strong>Namecheap</strong>, this 
+            full-stack web application provides a seamless experience, streamlining Bible 
+            study by offering curated, data-driven resources and insights.
+          </p>
+          <p>
+            <a href="https://github.com/gshanahan/PocketProverbs" target="_blank">View on GitHub</a>
+          </p>
+        </div>
+      
+        <div class="project-media-grid">
+          <img src="https://pocketproverbs.com/gallery_gen/8f8559ccc3caff049d5b40978ebc3f69_fit.gif?ts=1744809975" alt="Demo 1" class="demo-gif" />
+          <img src="https://pocketproverbs.com/gallery_gen/5ef4822f088b084a7e5f67be4fb7377d_fit.gif?ts=1744809975" alt="Demo 2" class="demo-gif" />
+        </div>
+      </section>                
     </section>
 
     <section id="contact">
