@@ -14,6 +14,38 @@ header {
   text-align: center;
 }
 
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* mobile default */
+  text-align: center;
+  padding: 2rem;
+  background-color: #333;
+  color: #fff;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+/* Desktop view: side-by-side */
+@media (min-width: 768px) {
+  .profile-header {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .profile-pic {
+    margin-right: 2rem;
+    margin-bottom: 0;
+  }
+}
+
 main {
   max-width: 800px;
   margin: 2rem auto;
