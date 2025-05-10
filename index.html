@@ -38,12 +38,14 @@
     
           <div class="card">
             <h3>Education</h3>
+            <img src="images\TECH_Logo_Horizontal_TransparentBkgd_Gold.png" alt="Tennessee Tech Logo" class="school-logo">
             <p>B.S. in Computer Science – <br>Tennessee Technological University, 2022</p>
             <p><em>Focus: Information Assurance</em></p>
           </div>
 
           <div class="card">
             <h3>Certifications</h3>
+            <img src="images\ASTQB-Logo_New.svg" alt="ASTQB Logo" class="astqb-logo">
             <ul>
               <li>2023 - ISTQB Certified Tester (CTFL)</li>
               <li>2024 - ISTQB Agile Tester (CTFL-AT)</li>
@@ -62,29 +64,58 @@
 
     <section id="projects">
       <h2>Projects</h2>
-      <section class="project">
-        <div class="project-text">
-          <h3>PocketProverbs</h3>
-          <p>
-            <strong>PocketProverbs</strong> is a GPT-powered Bible study assistant built to enhance 
-            Scripture exploration with AI-driven insights. Using the <strong>OpenAI GPT API</strong>, 
-            the app delivers historical context, verse analysis, and cross-references. 
-            The frontend is developed with <strong>HTML</strong> and <strong>JavaScript</strong>, while <strong>Google Firebase</strong> 
-            manages user authentication and stores study data. Hosted on <strong>Namecheap</strong>, this 
-            full-stack web application provides a seamless experience, streamlining Bible 
-            study by offering curated, data-driven resources and insights.
-          </p>
-          <p>
-            <a href="https://github.com/gshanahan/PocketProverbs" target="_blank">View on GitHub</a>
-          </p>
+      <div class="project-cards-grid">
+    
+        <div class="project-card">
+          <div class="project-card-header" onclick="toggleProject(this)">
+            <h3>PocketProverbs</h3>
+            <span class="toggle-indicator">+</span>
+          </div>
+    
+          <div class="project-card-content">
+            <h4>Project Overview</h4>
+            <p><strong>PocketProverbs</strong> is a GPT-powered Bible study assistant designed to enhance Scripture exploration through AI-driven insights.</p>
+    
+            <h4>Tech Stack</h4>
+            <ul>
+              <li><strong>Frontend:</strong> HTML, JavaScript</li>
+              <li><strong>AI Integration:</strong> OpenAI GPT API</li>
+              <li><strong>Backend:</strong> Firebase (Auth + Firestore)</li>
+              <li><strong>Hosting:</strong> Namecheap</li>
+            </ul>
+    
+            <h4>Functionality</h4>
+            <ul>
+              <li>Chat interface for Bible questions</li>
+              <li>Historical/theological context generation</li>
+              <li>Cross-referencing verses</li>
+              <li>User-authenticated study sessions</li>
+            </ul>
+    
+            <h4>Challenges & Solutions</h4>
+            <ul>
+              <li><strong>Challenge:</strong> GPT theological accuracy<br><strong>Solution:</strong> Prompt engineering and custom system messages.</li>
+              <li><strong>Challenge:</strong> Lightweight secure login<br><strong>Solution:</strong> Firebase Auth.</li>
+              <li><strong>Challenge:</strong> Affordable hosting<br><strong>Solution:</strong> Firebase + Namecheap.</li>
+            </ul>
+    
+            <h4>Impact & Goals</h4>
+            <p>Enhances Bible study with fast, AI-generated context while keeping doctrinal integrity intact.</p>
+    
+            <p><a href="https://github.com/gshanahan/PocketProverbs" target="_blank">View on GitHub</a></p>
+    
+            <div class="project-media-grid">
+              <img src="https://pocketproverbs.com/gallery_gen/8f8559ccc3caff049d5b40978ebc3f69_fit.gif?ts=1744809975" alt="Demo 1" class="demo-gif" />
+              <img src="https://pocketproverbs.com/gallery_gen/5ef4822f088b084a7e5f67be4fb7377d_fit.gif?ts=1744809975" alt="Demo 2" class="demo-gif" />
+            </div>
+          </div>
         </div>
-      
-        <div class="project-media-grid">
-          <img src="https://pocketproverbs.com/gallery_gen/8f8559ccc3caff049d5b40978ebc3f69_fit.gif?ts=1744809975" alt="Demo 1" class="demo-gif" />
-          <img src="https://pocketproverbs.com/gallery_gen/5ef4822f088b084a7e5f67be4fb7377d_fit.gif?ts=1744809975" alt="Demo 2" class="demo-gif" />
-        </div>
-      </section>                
+    
+        <!-- Add more project-card blocks here -->
+        
+      </div>
     </section>
+    
 
     <section id="contact">
       <h2>Contact</h2>
@@ -97,5 +128,7 @@
   <footer>
     <p>&copy; 2025 Gabriel Q. Shanahan</p>
   </footer>
+
+  <script src="/index.js"></script>
 </body>
 </html>
