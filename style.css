@@ -117,6 +117,46 @@ main {
   display: block;
 }
 
+#toolbox {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+#toolbox h2 {
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+  margin-top: 1rem;
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.tech-item img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 0.5rem;
+  filter: invert(28%) sepia(95%) saturate(4237%) hue-rotate(267deg) brightness(85%) contrast(115%);
+  transition: transform 0.2s ease, filter 0.3s ease;
+}
+
+.tech-item img:hover {
+  transform: scale(1.1);
+  filter: none;
+}
+
 .project {
   display: flex;
   flex-direction: column;
@@ -236,6 +276,52 @@ section {
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-5px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+#contact {
+  background-color: #1f1f1f;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-top: 1px solid #333;
+}
+
+.contact-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #2a2a2a;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+.contact-card:hover {
+  background-color: #333;
+}
+
+.contact-card i {
+  color: #7904c2;
+  font-size: 1.2rem;
+}
+
+.contact-card a {
+  color: #ddd;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
 }
 
 /* Desktop view adjustments */
