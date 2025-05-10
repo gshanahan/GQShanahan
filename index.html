@@ -14,7 +14,20 @@
     <div class="header-text">
       <h1 class="name-header">Gabriel Q. Shanahan</h1>
       <p>Software Engineer • Builder • Problem Solver</p>
-      <a href="/Resume%20-%20Gabriel%20Shanahan.pdf" class="resume-button" download>Download Résumé <span style="margin-left: 0.5rem;">&#x1F4C4;</span></a>
+      <section class="resume-section">
+        <div class="project-card">
+          <div class="project-card-header" onclick="toggleProject(this)">
+            <h3>Resume</h3>
+            <span class="toggle-indicator">+</span>
+          </div>
+      
+          <div class="project-card-content">
+            <div class="resume-preview">
+              <iframe src="Resume - Gabriel Shanahan.pdf" width="100%" height="600px" frameborder="0"></iframe>
+            </div>
+          </div>
+        </div>
+      </section>      
     </div>
   </header>
 

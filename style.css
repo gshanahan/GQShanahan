@@ -35,6 +35,19 @@ body {
   border: 2px solid #444;
 }
 
+.resume-preview {
+  margin: 1rem 0;
+  border: 1px solid #444;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+}
+
+.resume-buttons {
+  text-align: center;
+  margin-top: 1rem;
+}
+
 .resume-button {
   display: inline-block;
   margin-top: 1rem;
@@ -230,7 +243,7 @@ section {
 }
 
 .project-card.open {
-  max-height: 1500px;
+  max-height: 9999px;
   padding: 1rem;
 }
 
@@ -267,7 +280,7 @@ section {
 }
 
 .project-card.open .project-card-content {
-  max-height: 1200px;
+  max-height: 9999px;
   opacity: 1;
   margin-top: 1rem;
 }
