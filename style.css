@@ -115,13 +115,26 @@ main {
 }
 
 .school-logo,
-.astqb-logo,
-.pp-logo{
+.astqb-logo {
   width: auto;
   max-height: 60px;
   margin: 0.5rem auto;
   display: block;
   text-align: center;
+}
+
+.pp-logo{
+  width: auto;
+  max-height: 60px;
+  margin: 0.5rem 0;
+  display: block;
+}
+
+.true-square-logo {
+  width: auto;
+  max-height: 80px;
+  margin: 0.5rem 0;
+  display: block;
 }
 
 .cad-logo {
